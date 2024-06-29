@@ -34,10 +34,17 @@
 .text_widgets {
     font-size: 16px;
     font-weight: 500;
-
     font-family: "Inter", sans-serif;
     color:
         rgba(255, 255, 255, 0.45) !important;
+}
+
+.text_paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Inter", sans-serif;
+    color: rgba(105, 105, 105, 1);
 }
 
 .title_widgets {

@@ -1,0 +1,59 @@
+.tab-title {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+.tab-title span {
+    padding: 10px 20px;
+}
+
+.tab-content {
+    display: none;
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.tab-content.slide-left {
+    transform: translateX(-100%);
+}
+
+.tab-content.slide-left.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.tab-content.slide-down {
+    transform: translateY(-100%);
+}
+
+.tab-content.slide-down.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tab-link {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+.tab-link.active::after {
+    width: 100%;
+}
+
+
+.tab-link:hover::after {
+    width: 100%;
+}
+
+.span-line {
+    display: block;
+    border-bottom: 2px solid whitesmoke;
+    margin-bottom: 20px;
+    width: 100%;
+}
