@@ -1,3 +1,8 @@
+.body1,
+.body2 {
+    padding-top: 100px;
+}
+
 .tab-title {
     display: flex;
     cursor: pointer;
@@ -8,39 +13,68 @@
     padding: 10px 20px;
 }
 
+
 .tab-content {
-    display: none;
     opacity: 0;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
 .tab-content.slide-left {
     transform: translateX(-100%);
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .tab-content.slide-left.active {
-    display: block;
     opacity: 1;
     transform: translateX(0);
+    visibility: visible;
+    position: relative;
+    z-index: 2;
 }
 
 .tab-content.slide-down {
     transform: translateY(-100%);
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
 }
 
 .tab-content.slide-down.active {
-    display: block;
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
+    visibility: visible;
+    position: relative;
+    z-index: 2;
 }
 
 .tab-link {
-    position: relative;
     overflow: hidden;
     cursor: pointer;
 }
 
-
+.tab-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: orange;
+    transition: width 0.3s ease-out;
+}
 
 .tab-link.active::after {
     width: 100%;
