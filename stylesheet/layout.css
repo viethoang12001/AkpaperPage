@@ -20,7 +20,7 @@
     }
   } */
 
-.flat-row.main-content.blogSingle {
+.flat-row.main-content {
   padding: 130px 0 315px;
 }
 
@@ -30,7 +30,7 @@
   padding: 100px 0;
 }
 
-.entry {
+.main-content {
   overflow: hidden;
   margin-bottom: 60px;
 
@@ -50,7 +50,9 @@
   padding: 0;
   padding-right: 20px;
 }
-
+.mgt-10{
+  margin-top: 10px;
+}
 .mgl--15 {
   margin-left: -20px;
 }

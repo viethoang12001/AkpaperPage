@@ -1,93 +1,25 @@
-.body1,
-.body2 {
-    padding-top: 100px;
+i:hover,ul > li > a:hover{
+    color: #36a7e3 !important;
+    text-decoration: none;
+    outline: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.flat-socials .social li i:hover ,.widget-tag > a:hover{
+    background-color: #36a7e3 ;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.tab-title {
-    display: flex;
-    cursor: pointer;
-    justify-content: space-around;
-}
-
-.tab-title span {
-    padding: 10px 20px;
-}
-
-
-.tab-content {
-    opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-}
-
-.tab-content.slide-left {
-    transform: translateX(-100%);
-    display: block;
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.tab-content.slide-left.active {
-    opacity: 1;
-    transform: translateX(0);
-    visibility: visible;
-    position: relative;
-    z-index: 2;
-}
-
-.tab-content.slide-down {
-    transform: translateY(-100%);
-    display: block;
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-}
-
-.tab-content.slide-down.active {
-    opacity: 1;
-    transform: translateX(0);
-    visibility: visible;
-    position: relative;
-    z-index: 2;
-}
-
-.tab-link {
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.tab-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: orange;
-    transition: width 0.3s ease-out;
-}
-
-.tab-link.active::after {
-    width: 100%;
-}
-
-
-.tab-link:hover::after {
-    width: 100%;
-}
-
-.span-line {
-    display: block;
-    border-bottom: 2px solid whitesmoke;
-    margin-bottom: 20px;
-    width: 100%;
+.comment-detail .comment-reply:hover{
+    padding: 5px 10px;
+    background-color:  #36a7e3;
+    color: #fff !important;
+    border-radius: 10px;
 }

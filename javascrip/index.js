@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const tabLinks = document.querySelectorAll(".tab-link");
+  console.log(tabLinks);
 
   for (let i = 0; i < tabLinks.length; i++) {
     tabLinks[i].addEventListener("click", function () {
@@ -7,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
       for (let j = 0; j < tabLinks.length; j++) {
         tabLinks[j].classList.remove("active");
       }
+      // Thêm lớp active cho tab link hiện tại
+      this.classList.add("active");
+
       // Lấy id của tab content từ data-tab attribute
       let tabId = this.getAttribute("data-tab");
       let animationType = this.getAttribute("data-animation");
