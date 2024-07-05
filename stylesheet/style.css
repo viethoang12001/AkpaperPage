@@ -404,7 +404,6 @@ input {
 }
 
 .Banner-content {
-    /* position: absolute; */
     margin-top: 220px;
 }
 
@@ -725,6 +724,9 @@ input {
     width: 14px;
     margin-top: 5px;
 }
+.footer-widgets .widget-link{
+    display: flex;
+}
 
 /* CTA */
 .widget-CTA {
@@ -732,7 +734,7 @@ input {
 }
 
 .CTA {
-    padding: 40px 60px;
+    padding: 40px 50px;
     background-color: var(--primary-color);
     border-radius: 10px;
     display: flex;
@@ -743,7 +745,8 @@ input {
 .CTA .CTALogo {}
 
 .CTALogo .CTALogo-title {
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .CTALogo .CTALogo-title span {
@@ -761,7 +764,7 @@ input {
 }
 
 .newsLetter {
-    margin-right: 70px;
+    position: relative;
 }
 
 .newsLetter span {
@@ -775,8 +778,6 @@ input {
     height: 67px;
     border-radius: 16px;
     background-color: var(--third-color);
-    position: relative;
-
 }
 
 .newsLetter .btn-signUp {
@@ -787,11 +788,12 @@ input {
     background-color: var(--primary-color);
     border: none;
     position: absolute;
-    top: 103px;
-    right: 142px;
+    top: 63px;
+    right: 10px;
     transition: all 0.3s ease-in-out;
 }
-.newsLetter .btn-signUp:hover{
+
+.newsLetter .btn-signUp:hover {
     background-color: var(--secondary-color);
 }
 
@@ -1060,13 +1062,6 @@ input {
     gap: 40px;
 }
 
-.post-wrapper img {
-    display: inline;
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-}
-
 .post-wrapper .post-item {
     max-width: 350px;
     display: flex;
@@ -1135,4 +1130,12 @@ input {
 .comment-form #comment-container {
     height: 140px;
     margin-bottom: 30px;
+}
+
+/*
+----------------------------------------------------------------------
+ Product list
+ */
+.widget-Product-listing-list {
+    padding: 120px 0;
 }

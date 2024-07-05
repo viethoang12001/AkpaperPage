@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <h2>Tính diện tích hình tròn</h2>
+    <div class="form-group">
+        <label for="Diameter">Diameter:</label>
+        <input type="number" id="diameter" name="diameter" step="any" required>
+        <select  name="diameter_unit" id="diameter_unit">
+            <option value="inch">in</option>
+            <option value="Feet">ft</option>
+            <option value="centimeter">cm</option>
+            <option value="meter">m</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Depth">Depth :</label>
+        <input type="number" id="depth" name="depth" step="any" required>
+        <select name="depth_unit" id="depth_unit">
+            <option value="inch">in</option>
+            <option value="Feet">ft</option>
+            <option value="centimeter">cm</option>
+            <option value="meter">m</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <button id="btn_calculate">Tính</button>
+    </div>
+    <div class="result" id="result"></div>
+    <script src="javascrip/caculator.js"></script>
+</body>
+</html>
