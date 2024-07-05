@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1700px) {
+	.header.style2 .header-inner .logo {
+		padding: 0 108px 0 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	/* header */
+	#header {
+		padding-bottom: 90px;
+		background-position: center center;
+		background-size: cover;
+		object-fit: cover;
+	}
+	.header-inner  {
+	}
+
+	.Banner-content {
+		margin: 0;
+	}
+	.Banner-content h1{
+		font-size: 36px;
+        line-height: 40px;
+	}
+}

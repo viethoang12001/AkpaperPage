@@ -20,6 +20,14 @@
     }
   } */
 
+.container-custom {
+  margin: 0 11%;
+}
+.sticky{
+  position: sticky;
+  top: 20px; /* Vị trí từ đầu trang (top) là 20px */
+  left: 30px; /* Vị trí từ bên trái (left) là 30px */
+}
 .flat-row.main-content {
   padding: 130px 0 315px;
 }
@@ -50,6 +58,9 @@
   padding: 0;
   padding-right: 20px;
 }
+.mgt--200{
+  margin-top: -200px !important;
+}
 .mgt-10{
   margin-top: 10px;
 }
@@ -76,6 +87,9 @@
 .pdl-10 {
   padding-left: 10px;
 }
+.pdl-87{
+  padding-left: 81px;
+}
 
 .text-white {
   color: white;
@@ -84,4 +98,8 @@
 .flex-custom {
   display: flex;
   justify-content: space-between;
+}
+
+.col-md-7.post{
+  margin-right: -30px !important;
 }

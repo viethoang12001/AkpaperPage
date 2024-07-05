@@ -1,5 +1,8 @@
-i:hover,ul > li > a:hover{
-    color: #36a7e3 !important;
+@import url(./color.css);
+
+
+ul li a:hover  {
+    color: var(--primary-color) !important;
     text-decoration: none;
     outline: 0;
     -webkit-transition: all 0.3s ease-in-out;
@@ -8,8 +11,27 @@ i:hover,ul > li > a:hover{
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.flat-socials .social li i:hover ,.widget-tag > a:hover{
-    background-color: #36a7e3 ;
+.btn-custom:hover {
+    background-color: var(--secondary-color) !important;
+    -webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+}
+
+.widget-social li a:hover {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.widget-tag a:hover  {
+    background-color: var(--primary-color);
+    color: #fff !important;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -17,9 +39,9 @@ i:hover,ul > li > a:hover{
     transition: all 0.3s ease-in-out;
 }
 
-.comment-detail .comment-reply:hover{
+.comment-detail .comment-reply:hover {
     padding: 5px 10px;
-    background-color:  #36a7e3;
+    background-color: var(--primary-color);
     color: #fff !important;
     border-radius: 10px;
 }

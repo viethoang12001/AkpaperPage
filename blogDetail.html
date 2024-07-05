@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="stylesheet/shortStyle.css">
     <link rel="stylesheet" href="stylesheet/layout.css">
     <link rel="stylesheet" href="stylesheet/animation.css">
+    <link rel="stylesheet" href="stylesheet/reponsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -22,31 +23,56 @@
                 </a>
             </div><!-- /logo -->
             <nav class="nav-wrap">
-                <ul class="menu">
-                    <li><a href="#">Demos<i class="fa-solid fa-chevron-down fa-2xs"></i></a>
-                    </li>
-                    <li><a href="#">Pages<i class="fa-solid fa-chevron-down fa-2xs"></i></a>
-                    </li>
-                    <li><a href="#">Features</a>
-                    </li>
-                    <li><a href="#">Project<i class="fa-solid fa-chevron-down fa-2xs"></i></a>
-                    </li>
-                    <li><a href="#">Contact</a></li>
-                    <li><i class="fa-solid fa-magnifying-glass fa-2xs" style="color: #fcfcfc;"></i></li>
-                </ul> <!-- /menu -->
+                <div class="mainnav" id="mainnav">
+                    <ul class="menu">
+                        <li><a href="#">Demos<i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+                            <ul id="subnav">
+                                <li><a href="#">demo1</a></li>
+                                <li><a href="#">demo1</a></li>
+                                <li><a href="#">demo1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages<i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+                            <ul id="subnav">
+                                <li><a href="#">Page1</a></li>
+                                <li><a href="#">Page2</a></li>
+                                <li><a href="#">Page3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Features</a>
+                        </li>
+                        <li><a href="#">Project<i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+                            <ul id="subnav">
+                                <li><a href="#">Project1</a></li>
+                                <li><a href="#">Projec2</a></li>
+                                <li><a href="#">Projec3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                        <li><i class="fa-solid fa-magnifying-glass fa-2xs" style="color: #fcfcfc;"></i></li>
+                    </ul> <!-- /menu -->
+                </div>
             </nav> <!-- /navwrap -->
             <div class="btn-custom" id="btn-getStarted">
                 <a href="#">Get Started<img class="imgIcon" src="Icon/arrow.png" alt=""></a>
             </div><!-- btn-get -->
         </div><!-- .header-inner -->
-        <div class="Banner-content">
-            <h1>Achieving Fashion Elegant Design Runway Life</h1>
-            <div class="Banner-direction">
-                <span>Home</span>
-                <i class="fa-solid fa-angle-right fa-xs"></i>
-                <span>Blog Standard</span>
+        <div class="flat-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="Banner-content">
+                            <h1>Achieving Fashion Elegant Design Runway Life</h1>
+                            <div class="Banner-direction">
+                                <span>Home</span>
+                                <i class="fa-solid fa-angle-right fa-xs"></i>
+                                <span>Blog Standard</span>
+                            </div>
+                        </div> <!-- /banner-->
+                    </div>
+                </div>
             </div>
-        </div> <!-- /banner-->
+        </div>
     </header> <!-- /header -->
 
     <!-- Blog Post -->
@@ -54,8 +80,8 @@
         <!-- container -->
         <section class="container">
             <div class="row">
-                <!-- blog -->
-                <div class="col-md-7">
+                <!-- blog-detail -->
+                <div class="col-md-7 post">
                     <div class="post-wrap">
                         <article class="entry format-standard">
                             <!-- entry-image -->
@@ -92,7 +118,6 @@
                                                     Native
                                                 </h2>
                                             </div>
-
                                             <div class="whisper">
                                                 Johnny M. Martin
                                             </div>
@@ -108,16 +133,16 @@
                                 </div>
                                 <!-- ./entry-content -->
                                 <!-- wrap-share -->
-                                <div class="wrap-share">
+                                <div class="widget widget-share">
                                     <div class="widget-tag">
-                                        <h3 class="title">Tags</h3>
+                                        <h3 class="widget-title">Tags</h3>
                                         <a href="#">Marketing</a>
                                         <a href="#">Product</a>
                                         <a href="#">Social Media</a>
                                     </div>
-                                    <div class="flat-socials">
-                                        <h3 class="title">Share</h3>
-                                        <ul class="social">
+                                    <div class=" widget flat-socials">
+                                        <h3 class="widget-title">Share</h3>
+                                        <ul class="widget-social">
                                             <li><a href="#"><i class="fa-brands fa-facebook-f fa-sm"></i></a></li>
                                             <li><a href="#"><i class="fa-brands fa-twitter fa-sm"></i></a></li>
                                             <li><a href="#"><i class="fa-brands fa-linkedin-in fa-sm"></i></a></li>
@@ -136,7 +161,7 @@
                                             <h2 class="title">Richard M. Fudge</h2>
                                             <p class="text_paragraph">We denounce with righteous indignation and dislike
                                                 men ways to beguiled demoralized by the charms of pleasure</p>
-                                            <div class="social">
+                                            <div class="widget-social">
                                                 <ul>
                                                     <li><a href="#"><i class="fa-brands fa-facebook-f fa-sm"></i></a>
                                                     </li>
@@ -224,43 +249,46 @@
                                 </div>
                                 <div class="comment-respond">
                                     <h2 class="title">Leave a Reply</h2>
-                                    <form class="comment-form" method="#">
-                                        <input type="text" placeholder="Full Name" class="fullname-contariner form">
-                                        <input type="text" placeholder="Phone" class="phone-container form">
-                                        <input type="email" placeholder="Email Address" class="email-container form">
-                                        <textarea name="comment-container" id=""></textarea>
-                                        <button class="btn_form"> Send Comments <i class="fas fa-arrow-right "></i> </button>
+                                    <form action="#" method="post" id="commentform" class="comment-form" novalidate="">
+                                        <fieldset class="name-container">
+                                            <input type="text" id="author" placeholder="Name" class="tb-my-input"
+                                                name="author" tabindex="1" value="" size="32" aria-required="true">
+                                        </fieldset>
+                                        <fieldset class="phone-container">
+                                            <input type="text" id="phone" placeholder="Telephone*" class="tb-my-input"
+                                                name="phone" tabindex="1" value="" size="32" aria-required="true">
+                                        </fieldset>
+                                        <fieldset class="email-container">
+                                            <input type="text" id="email" placeholder="Email" class="tb-my-input"
+                                                name="email" tabindex="2" value="" size="32" aria-required="true">
+                                        </fieldset>
+                                        <fieldset class="message">
+                                            <textarea id="comment-container" name="comment" rows="8"
+                                                tabindex="4">Comment*</textarea>
+                                        </fieldset>
+                                        <p class="form-submit">
+                                            <input class="btn-custom text-white" name="submit" type="submit" id="comment-reply" class="submit"
+                                                value="send message"> <input type="hidden" name="comment_post_ID"
+                                                value="27" id="comment_post_ID">
+                                            <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                                        </p>
                                     </form>
-                                    
                                 </div>
                         </article>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <!-- slideBar -->
                 <div class="col-md-4 offset-md-1 slideBar">
-                    <div class="sileBar-search">
-                        <h3>Search</h3>
+                    <div class="widget widge-search">
+                        <h3 class="widget-title">Search</h3>
                         <div class="input-search">
-                            <input type="text" placeholder="Keyword">
+                            <input id="s" type="text" placeholder="Keyword">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
-                    <div class="sileBar-category">
-                        <h3>Category</h3>
+                    <!-- widget-category -->
+                    <div class="widget widget-category">
+                        <h3 class="widget-title">Category</h3>
                         <ul class="category-content">
                             <li><a href="#">Digital Marketing <i class="fa-solid fa-arrow-right"></i></a></li>
                             <li><a href="#">SEO optimization <i class="fa-solid fa-arrow-right"></i></a>
@@ -281,9 +309,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="sliebar-news">
-                        <h3>Recent News</h3>
-                        <div class="wraper">
+                    <!-- widget-news -->
+                    <div class=" widget widget-popular-news">
+                        <h3 class="widget-title">Recent News</h3>
+                        <div class="popular-news">
                             <div class="news-item">
                                 <div>
                                     <img src="images/new1.jpeg" alt="">
@@ -316,10 +345,10 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="slide-popular">
-                        <h3>Popular Tags</h3>
+                    </div> <!-- ./widget-news -->
+                    <!-- widget-popular -->
+                    <div class=" widget widget-popular">
+                        <h3 class="widget-title">Popular Tags</h3>
                         <div class="widget-tag">
                             <a href="#">Marketing</a>
                             <a href="#">Product</a>
@@ -328,8 +357,9 @@
                             <a href="#">Content</a>
                             <a href="#">Design</a>
                         </div>
-                    </div>
-                    <div class="slide-poster">
+                    </div> <!-- widget-popular -->
+                    <!-- widget-poster -->
+                    <div class="widget widget-poster">
                         <div class="poster">
                             <div class="poster-title">
                                 <h2 class="title">Boost your Digital Product marketing?</h2>
@@ -349,16 +379,128 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ./widget-poster -->
                 </div>
+                <!-- ./slidebar -->
             </div>
+            <!-- ./blog-detail -->
         </section>
     </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="widget-CTA ">
+                    <div class="CTA ">
+                        <div class="CTALogo">
+                            <div class="CTALogo-title">
+                                <img src="images/logo2.png" alt="">
+                            </div>
+                            <span>Digital Business Consulting Agency</span>
+                        </div>
+                        <div class="newsLetter">
+                            <span>Subscribe Our Newsletter</span>
+                            <input type="text" placeholder="Email Address" class="input-email">
+                            <div class="signUp">
+                                <a href="#" class="btn-signUp">Sign Up<i class="fa-solid fa-arrow-right fa-rotate-by"
+                                        style="color: #fcfcfc; --fa-rotate-angle: 320deg;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mgt--200">
+                    <div class="col-md-3">
+                        <div class="widget widget-text">
+                            <h2 class="widget-title">About Company</h2>
+                            <p class="text_paragraph"> Doloremque laudantium tota aperiam eaque abillo inventore
+                                architect
+                                beatae
+                                vitae dicta sunt explicabos</p>
+                            <ul class="widget-social">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f fa-sm"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter fa-sm"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in fa-sm"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram fa-sm"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="widget widget-text pdl-87">
+                            <h2 class="widget-title">Resources</h2>
+                            <ul>
+                                <li><a href="#" class="text_widgets">Product</a></li>
+                                <li><a href="#" class="text_widgets">Services</a></li>
+                                <li><a href="#" class="text_widgets">About Us</a> </li>
+                                <li><a href="#" class="text_widgets">Benefits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class="widget widget-text pdl-87">
+                            <h2 class="widget-title">Quick Link</h2>
+                            <ul>
+                                <li><a href="#" class="text_widgets">Features</a></li>
+                                <li><a href="#" class="text_widgets">Pricing Plan</a></li>
+                                <li><a href="#" class="text_widgets">Best Program</a> </li>
+                                <li><a href="#" class="text_widgets">Press Kit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class="widget widget-text pdl-87">
+                            <h2 class="widget-title">Company</h2>
+                            <ul>
+                                <li><a href="#" class="text_widgets">About</a></li>
+                                <li><a href="#" class="text_widgets">Team Member</a></li>
+                                <li><a href="#" class="text_widgets">Reviews</a> </li>
+                                <li><a href="#" class="text_widgets">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="widget widget-text pdl-87">
+                            <h2 class="widget-title">Contact</h2>
+                            <ul class="contact ">
+                                <li>
+                                    <img class="imgContact " src="Icon/LocationIcon.png" alt="">
+                                    <span class="text_widgets ">55 Main Street, 2nd block Melbourne,
+                                        Australia</span>
+                                </li>
+                                <li>
+                                    <img class="imgContact" src="Icon/MessageIcon.png" alt="">
+                                    <span class="text_widgets ">support@gmail.com</span>
+                                </li>
+                                <li>
+                                    <img class="imgContact" src="Icon/phoneIcon.png" alt="">
+                                    <span class="text_widgets">+000 (123) 44 55</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btnUp">
+                        <a href="#" class="upLink"><i class="fa-solid fa-angles-up fa-sm"></i></a>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text_widgets text_paragraph ">Copyright @2023, <span class="text-white">Akpager</span>
+                            All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-3 offset-md-5">
+                        <ul class="flex-custom">
+                            <li>Faqs</li>
+                            <li>Setting</li>
+                            <li>Privacy</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
 
 
+        </div>
 
-
-
+    </footer>
+    <!-- ./footer -->
 
     <script src="https://kit.fontawesome.com/c4a7e70f3e.js" crossorigin="anonymous"></script>
 </body>
