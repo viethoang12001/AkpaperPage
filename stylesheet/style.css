@@ -1056,7 +1056,8 @@ input {
 .post-wrapper {
     display: flex;
     margin-bottom: 80px;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .post-wrapper img {
@@ -1067,6 +1068,7 @@ input {
 }
 
 .post-wrapper .post-item {
+    max-width: 350px;
     display: flex;
     gap: 20px;
 }
