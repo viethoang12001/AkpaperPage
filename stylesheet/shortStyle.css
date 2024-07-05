@@ -55,37 +55,44 @@ i {
 .imgIcon {
     margin-left: 7px;
 }
+
 .widget-social li {
     display: inline;
 }
+
 .line {
     width: 100%;
     height: 1.2px;
     margin: 20px 0 30.8px 0;
     background-color: rgba(15, 17, 15, 0.1);
 }
+
 .post-line {
     margin-top: 16px;
     width: 240px;
     height: 1.2px;
     background-color: rgba(15, 17, 15, 0.1);
 }
-.text-date{
+
+.text-date {
     font-weight: 400;
     color: var(--color-spans);
     font-family: "Inter", sans-serif;
 }
-.title-item{
+
+.title-item {
     font-size: 18px;
     font-weight: bold;
     margin-top: 2.8px;
 }
-.form{
+
+.form {
     height: 60px;
     border: none;
     border-radius: 12px;
     outline: none;
 }
+
 .widget .widget-tag a {
     display: inline-block;
     margin-left: 10px;
@@ -97,7 +104,7 @@ i {
     color: rgba(105, 105, 105, 1) !important;
 }
 
-.widget .widget-social a  {
+.widget .widget-social a {
     color: rgba(105, 105, 105, 1) !important;
     display: inline-block;
     height: 40px;
@@ -108,6 +115,12 @@ i {
     border-radius: 50%;
     border: 1.2px solid rgba(0, 25, 76, 0.1);
 }
-.text-white{
+
+.text-white {
     color: #fff !important;
+}
+
+.text-main {
+    color:
+        rgba(0, 23, 38, 1) !important;
 }

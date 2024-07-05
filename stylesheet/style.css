@@ -288,9 +288,10 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
     border: none;
-    color: #a0a0a0;
+    color:
+        rgba(105, 105, 105, 1);
     background-color: #fff;
     height: 65px;
     outline: none;
@@ -578,8 +579,16 @@ input {
 }
 
 .widget-category .category-content li {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 20px;
+    transition: transform 0.4s ease-in-out;
 }
+
+.widget-category .category-content li a:hover {
+    transform: translateX(10px);
+}
+
 
 .category-content li a {
     font-size: 16px;
@@ -775,11 +784,15 @@ input {
     width: 130.26px;
     border-radius: 12px;
     padding: 10px 25px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border: none;
     position: absolute;
     top: 103px;
     right: 142px;
+    transition: all 0.3s ease-in-out;
+}
+.newsLetter .btn-signUp:hover{
+    background-color: var(--secondary-color);
 }
 
 .footer-widgets .widget.widget-text .widget-social a {
