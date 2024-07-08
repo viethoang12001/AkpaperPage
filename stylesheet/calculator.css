@@ -23,7 +23,7 @@ input[type="number"] {
     color:
         rgba(105, 105, 105, 1);
     background-color: #fff;
-    height: 65px;
+    height: 30px;
     outline: none;
     border-radius: 12px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -31,6 +31,19 @@ input[type="number"] {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+.optional{
+    margin-bottom: 10px;
+}
+.optional .calculatorInputGroup{
+    text-align: center;
+    margin-top: .25em;
+    margin-bottom: .5em;
+}
+.optional .calculatorInputGroupInline{
+    display: inline-block;
+    margin-top: .25em;
+    margin-bottom: .5em;
 }
 
 select {

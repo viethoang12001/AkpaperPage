@@ -30,7 +30,7 @@
                 <option value="centimeter">cm</option>
                 <option value="meter">m</option>
             </select>
-            <fieldset>
+            <fieldset class="optional">
                 <legend class="note small">Optional</legend>
                 <div class="calculatorInputGroup">
                     Pricing in:
@@ -41,17 +41,19 @@
                     <label for="pricing_0">Bags</label>
                 </div>
                 <div class="calculatorInputGroup">
-                    <label for="price">Price</label>
-                    <input name="price" id="price" value="" class="nmbr_real real negate_Input" type="text"
-                        inputmode="decimal" title="0 hoặc số thực dương" size="5">
-                </div>
-                <div class="calculatorInputGroup">
-                    <label for="price_unit">size of bag</label>
-                    <select name="price_unit" id="price_unit">
-                        <option value="foot">cubic foot</option>
-                        <option value="yard" selected="">cubic yard</option>
-                        <option value="meter">cubic meter</option>
-                    </select>
+                    <div class="calculatorInputGroupInline">
+                        <label for="price">Price</label>
+                        <input name="price" id="price" value="" class="nmbr_real real negate_Input" type="text"
+                            inputmode="decimal" title="0 hoặc số thực dương" size="5">
+                    </div>
+                    <div class="calculatorInputGroupInline">
+                        <label for="price_unit">size of bag</label>
+                        <select name="price_unit" id="price_unit">
+                            <option value="foot">cubic foot</option>
+                            <option value="yard" selected="">cubic yard</option>
+                            <option value="meter">cubic meter</option>
+                        </select>
+                    </div>
                 </div>
             </fieldset>
         </div>
