@@ -33,7 +33,6 @@
     z-index: 2
 }
 
-
 .tab-content.slide-left {
     transform: translateX(-100%);
 }

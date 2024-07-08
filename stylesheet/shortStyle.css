@@ -4,6 +4,14 @@
     border-radius: 10px;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.justify-spaceBT {
+    justify-content: space-between;
+}
+
 .btn-custom {
     padding: 20px 45px;
     border-radius: 20px;
@@ -15,6 +23,21 @@
     text-align: center;
     background-color: var(--primary-color);
     cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-custom::before {
+    content: '';
+    background: var(--primary-color);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;
+    border-radius: 20px;
 }
 
 .text_widgets {
@@ -123,4 +146,12 @@ i {
 .text-main {
     color:
         rgba(0, 23, 38, 1) !important;
+}
+
+.color-social {
+    background-color: rgba(39, 53, 87, 1);
+}
+
+.font-sz {
+    font-size: 48px !important;
 }

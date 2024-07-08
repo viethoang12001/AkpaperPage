@@ -61,13 +61,15 @@
 .mgt--200{
   margin-top: -200px !important;
 }
+.mg-auto{
+  margin: 0 auto !important;
+}
 .mgt-10{
   margin-top: 10px;
 }
 .mgl--15 {
   margin-left: -20px;
 }
-
 .mgb-20 {
   margin-bottom: 20px;
 }

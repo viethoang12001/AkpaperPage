@@ -2,28 +2,35 @@ var diameter = document.getElementById("diameter");
 var diameter_unit = document.getElementById("diameter_unit");
 var depth = document.getElementById("depth");
 var depth_unit = document.getElementById("depth_unit");
-const btn_calculate = document.getElementById("btn_calculate");
+var btn_calculate = document.getElementById("btn_calculate");
 
 btn_calculate.onclick = function () {
-    let Diameter = 0;
-    let Depth = 0;
-  if (diameter_unit.value === "inch") {
-    Diameter = diameter.value * 0.0254;
-  } else if (diameter_unit.value === "Feet") {
-    Diameter = diameter.value * 0.3048;
-  } else if (diameter_unit.value === "centimeter") {
-    Diameter = diameter.value * 0.01;
+  function convertToMeters(value, unit) {
+    switch (unit) {
+      case "meter":
+        return value * 3.2808; // 1 m = 3.2808 ft
+      case "centimeter":
+        return value * 0.032808; // 1 cm = 0.032808 ft
+      case "inch":
+        return value * 0.083333; // 1 inch = 0.083333 ft
+      case "feet":
+      default:
+        return value; // already in meters
+    }
   }
-  if (depth_unit.value === "inch") {
-    Depth = depth.value * 0.0254;
-  } else if (depth_unit.value === "Feet ") {
-    Depth = depth.value * 0.3048;
-  } else if (depth_unit.value === "centimeter") {
-    Depth = depth.value * 0.01;
-  }
+  var radiusValue = convertToMeters(diameter.value / 2, diameter_unit.value);
+  var depthValue = convertToMeters(depth.value, depth_unit.value);
 
-  var area = Math.PI * Math.pow(Diameter / 2, 2);
-  var ft3 = Depth * area;
+  var area = Math.PI * Math.pow(radiusValue, 2);
+  var ft3 = depthValue * area;
   var yd3 = ft3 / 27;
-  document.getElementById("result").innerHTML = yd3;
+  var cubicFeet = yd3 * 27;
+  var cubicMeters = yd3 * 0.764555;
+
+  document.getElementById("result").innerHTML = `
+                <h3>Conversion Result:</h3>
+                <p>cubic yards = ${yd3.toFixed(2)} </p>
+                <p>cubic feet = ${cubicFeet.toFixed(2)} </p>
+                <p>cubic meters = ${cubicMeters.toFixed(2)} </p>
+            `;
 };
