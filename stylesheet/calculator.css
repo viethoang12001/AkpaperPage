@@ -54,10 +54,13 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
+.form-btn{
+    display: flex;
+}
 button {
     width: 100%;
     padding: 10px;
+    margin: 5px;
     background-color: #4CAF50;
     color: white;
     border: none;

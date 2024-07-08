@@ -3,6 +3,7 @@ var diameter_unit = document.getElementById("diameter_unit");
 var depth = document.getElementById("depth");
 var depth_unit = document.getElementById("depth_unit");
 var btn_calculate = document.getElementById("btn_calculate");
+var btn_clear = document.getElementById("btn_clear");
 
 btn_calculate.onclick = function () {
   function convertToMeters(value, unit) {
@@ -33,4 +34,9 @@ btn_calculate.onclick = function () {
                 <p>cubic feet = ${cubicFeet.toFixed(2)} </p>
                 <p>cubic meters = ${cubicMeters.toFixed(2)} </p>
             `;
+};
+btn_clear.onclick =function () {
+  diameter.value = "";
+  depth.value = "";
+  document.getElementById("result").innerHTML = "";
 };

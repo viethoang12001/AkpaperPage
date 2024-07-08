@@ -396,7 +396,7 @@ input[type="color"]:focus {
 }
 
 a:focus {
-    color: var(--primary-color);
+    color: var(--color-text-white);
     text-decoration: none;
     outline: 0;
     -webkit-transition: all 0.3s ease-in-out;
