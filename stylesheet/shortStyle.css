@@ -1,3 +1,5 @@
+@import url(color.css);
+
 .imgBlog {
     width: 100%;
     height: 460px;
@@ -154,4 +156,11 @@ i {
 
 .font-sz {
     font-size: 48px !important;
+}
+
+.blog-meta {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }

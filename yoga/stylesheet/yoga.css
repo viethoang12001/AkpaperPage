@@ -1,0 +1,121 @@
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+    padding: 0 !important;
+}
+
+.widget{
+    margin-bottom: 50px;
+}
+
+.course {
+    padding: 160px 0;
+}
+
+.tf-contaier {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.wrap-content{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   gap:17px 17px;
+}
+
+.title-wrap .title-box h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.title-wrap .title-box p {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.title-wrap .view-more{
+    margin-top: 57px;
+}
+.title-wrap .view-more a{
+    color: rgba(19, 24, 54, 1);
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+
+.widget-course .img-source{
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.course-content .meta-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.course-content .meta-list li:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1.2px solid rgba(228, 228, 231, 1);
+}
+.course-content .meta-list .icon-courese{
+    margin-right: 5px;
+    margin-bottom: 2.5px;
+}
+
+.meta-list li a {
+    color: rgba(88, 93, 105, 1);
+    font-weight: 400;
+}
+.widget-course  .course-content h6{
+    font-weight: 500;
+    line-height: 28px;
+}
+
+@media only screen and (max-width: 1170px){
+    .wrap-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (max-width: 1170px){
+    .wrap-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .wrap-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .title-wrap{
+        flex-direction: column;
+    }
+    .title-wrap .view-more{
+        text-align: right;
+    }
+    .title-wrap .title-box{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .wrap-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .widget-course{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
