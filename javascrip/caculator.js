@@ -3,10 +3,12 @@ var diameter_unit = document.getElementById("diameter_unit");
 var depth = document.getElementById("depth");
 var depth_unit = document.getElementById("depth_unit");
 var btn_calculate = document.getElementById("btn_calculate");
+var price = document.getElementById("price");
+var price_unit = document.getElementById("price_unit");
 var btn_clear = document.getElementById("btn_clear");
 
 btn_calculate.onclick = function () {
-  function convertToMeters(value, unit) {
+  function convertToFeet(value, unit) {
     switch (unit) {
       case "meter":
         return value * 3.2808; // 1 m = 3.2808 ft
@@ -19,8 +21,8 @@ btn_calculate.onclick = function () {
         return value; // already in meters
     }
   }
-  var radiusValue = convertToMeters(diameter.value / 2, diameter_unit.value);
-  var depthValue = convertToMeters(depth.value, depth_unit.value);
+  var radiusValue = convertToFeet(diameter.value / 2, diameter_unit.value);
+  var depthValue = convertToFeet(depth.value, depth_unit.value);
 
   var area = Math.PI * Math.pow(radiusValue, 2);
   var ft3 = depthValue * area;
@@ -28,15 +30,31 @@ btn_calculate.onclick = function () {
   var cubicFeet = yd3 * 27;
   var cubicMeters = yd3 * 0.764555;
 
+  function totalCost(value, unit) {
+    switch (unit) {
+      case "yard":
+        return value * yd3;
+      case "foot":
+        return value * cubicFeet;
+      case "meter":
+        return value * cubicMeters;
+      default:
+        return value;
+    }
+  }
+  var cost = totalCost(price.value,price_unit.value);
+
   document.getElementById("result").innerHTML = `
                 <h3>Conversion Result:</h3>
                 <p>cubic yards = ${yd3.toFixed(2)} </p>
                 <p>cubic feet = ${cubicFeet.toFixed(2)} </p>
                 <p>cubic meters = ${cubicMeters.toFixed(2)} </p>
+                <p> Cost = ${cost} </p>
             `;
 };
-btn_clear.onclick =function () {
+btn_clear.onclick = function () {
   diameter.value = "";
   depth.value = "";
+  price.value = "";
   document.getElementById("result").innerHTML = "";
 };

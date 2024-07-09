@@ -292,7 +292,6 @@ p {
     line-height: 30px;
     color: rgba(105, 105, 105, 1);
     letter-spacing: 0.64px;
-
 }
 
 article,
@@ -467,9 +466,11 @@ input {
     margin: 0 130px;
 
 }
-#mainnav ul > li ul > li > a{
+
+#mainnav ul > li > ul > li > a {
     color: black !important;
 }
+
 #mainnav ul li {
     position: relative;
 }
@@ -477,19 +478,19 @@ input {
 #mainnav .subnav {
     position: relative;
 }
-#mainnav ul li ul li{
+
+#mainnav ul li ul li {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
 #mainnav ul li ul {
-    width: 115px;
     background: var(--secondary-color);
     position: absolute;
     z-index: 9999;
     left: 0px;
-    top: 101%;
+    top: 100%;
     opacity: 0;
     min-width: 250px;
     visibility: hidden;
@@ -503,14 +504,12 @@ input {
 
 #mainnav ul li ul li {
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 20px 20px; 
     float: left;
     border-bottom: 1px solid rgba(1, 13, 9, 0.1);
 }
 
-#mainnav li:hover>ul {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
+#mainnav li:hover>ul {  
     opacity: 1;
     visibility: visible;
     -webkit-transform: translate(0, 0);
@@ -523,13 +522,7 @@ input {
 #mainnav ul li ul li ul {
     left: 251px;
     top: 0;
-    margin-left: -30px;
 }
-
-
-
-
-
 
 .header-inner .nav-wrap .menu li {
     display: inline;
@@ -548,7 +541,7 @@ input {
 
 .header-inner .nav-wrap .menu {
     display: block;
-    padding: 14px 0 !important;
+    padding: 14px 0 14px 0 !important;
 }
 
 .header-inner #btn-getStarted {
@@ -594,8 +587,6 @@ input {
 
 /* Blog */
 /* -------------------------------------------------------------------------- */
-.flat-latest-blog {}
-
 .main-post .author {
     display: flex;
     margin: 30px 0;
