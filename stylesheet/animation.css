@@ -1,6 +1,6 @@
 @import url(./color.css);
 
-.btn-custom:hover::before {
+.theme-btn:hover::before {
     width: 100%;
     background-color: var(--secondary-color) !important;
     -webkit-transition: all 0.3s ease-in-out;
@@ -28,10 +28,24 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+.widget-link a:hover {
+    color: #fff !important; 
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
 
 .comment-detail .comment-reply:hover {
     padding: 5px 10px;
     background-color: var(--primary-color);
     color: #fff !important;
     border-radius: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }

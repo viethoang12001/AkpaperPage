@@ -20,6 +20,13 @@
     }
   } */
 
+ @media only screen and (max-width: 1200px) {
+    .container.container-1690 {
+        max-width: 1320px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 
 @media only screen and (min-width: 1200px) {
   .container.container-1690 {
@@ -35,10 +42,6 @@
   }
 }
 
-.container-custom {
-  margin: 0 11%;
-}
-
 .sticky {
   position: sticky;
   top: 20px;
@@ -48,19 +51,13 @@
 }
 
 .flat-row.main-content {
-  padding: 130px 0 315px;
+  padding: 130px 0 130px;
 }
 
 .flat-row {
   clear: both;
   display: block;
   padding: 100px 0;
-}
-
-.main-content {
-  overflow: hidden;
-  margin-bottom: 60px;
-
 }
 
 .col-md-1.footerItem,
