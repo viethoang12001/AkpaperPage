@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="product">
+        <h3>Áo</h3>
+        <p>Price: $20.00</p>
+        <button onclick="addToCart('Áo', 20.00)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h3>Quần</h3>
+        <p>Price: $40.00</p>
+        <button onclick="addToCart('Quần', 40.00)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h3>Đồng hồ</h3>
+        <p>Price: $90.00</p>
+        <button onclick="addToCart('Đồng hồ', 90.00)">Add to Cart</button>
+    </div>
+
+    <div id="cart">
+        <h2>Cart</h2>
+        <div id="screen_cart">
+        </div>
+        <div id="cart-total">
+            Total: $<span id="total">0.00</span>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

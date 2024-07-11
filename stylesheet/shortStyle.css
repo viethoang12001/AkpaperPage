@@ -1,6 +1,6 @@
 @import url(color.css);
 
-.imgBlog {
+.imgblog {
     width: 100%;
     height: 460px;
     border-radius: 10px;
@@ -14,13 +14,25 @@
     justify-content: space-between;
 }
 
-.btn-custom {
-    padding: 20px 45px;
+.overlay::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background-color: black;
+}
+
+.theme-btn {
+    display: inline-flex;
+    font-size: 18px;
+    padding: 13px 45px;
     border-radius: 20px;
-    height: 56.89px;
-    width: 217.56px;
+    align-items: center;
     text-align: center;
-    line-height: 17.11px;
     font-weight: 600;
     text-align: center;
     background-color: var(--primary-color);
@@ -30,7 +42,7 @@
     overflow: hidden;
 }
 
-.btn-custom::before {
+.theme-btn::before{
     content: '';
     background: var(--primary-color);
     width: 0;
@@ -72,7 +84,8 @@ img {
     object-position: center;
 }
 
-i {
+i { 
+    margin-top: 7px;
     margin-left: 5px;
     cursor: pointer;
 }
