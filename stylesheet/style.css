@@ -435,9 +435,10 @@ input[type="color"] {
     color:
         rgba(105, 105, 105, 1);
     background-color: #fff;
-    height: 65px;
+    height: auto;
     outline: none;
     padding: 12px 30px;
+    font-weight: 500;
     border-radius: 12px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -932,38 +933,26 @@ input {
 }
 
 /* form-comment*/
-
-.comment-respond {
-    padding: 50px;
+.comment-form {
+    padding: 40px 60px 50px;
     background-color:
         rgba(241, 245, 255, 1);
-    margin-top: 80px
+    margin: 75px 0;
+    border-radius: 10px;
 }
 
-.comment-respond h2 {
+.comment-form h4{
+    font-size: 27px;
+    line-height: 32px;
+}
+.comment-form .form-group {
     margin-bottom: 30px;
 }
-
-.comment-form .name-container {
-    width: 48.27%;
-    float: left;
-    margin-right: 20px;
+.form-control{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
 }
-
-.comment-form .phone-container {
-    width: 48.27%;
-}
-
-.comment-form .email-container {
-    width: 100%;
-    margin: 30px 0;
-}
-
-.comment-form #comment-container {
-    height: 140px;
-    margin-bottom: 30px;
-}
-
 
 /* slidebar */
 /* ------------------------------------------------------------------------------ */

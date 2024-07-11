@@ -308,33 +308,40 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="comment-respond">
-                                    <h2 class="title">Leave a Reply</h2>
-                                    <form action="#" method="post" id="commentform" class="comment-form" novalidate="">
-                                        <fieldset class="name-container">
-                                            <input type="text" id="author" placeholder="Name" class="tb-my-input"
-                                                name="author" tabindex="1" value="" size="32" aria-required="true">
-                                        </fieldset>
-                                        <fieldset class="phone-container">
-                                            <input type="text" id="phone" placeholder="Telephone*" class="tb-my-input"
-                                                name="phone" tabindex="1" value="" size="32" aria-required="true">
-                                        </fieldset>
-                                        <fieldset class="email-container">
-                                            <input type="text" id="email" placeholder="Email" class="tb-my-input"
-                                                name="email" tabindex="2" value="" size="32" aria-required="true">
-                                        </fieldset>
-                                        <fieldset class="message">
-                                            <textarea id="comment-container" name="comment" rows="8" tabindex="4"
-                                                placeholder="Comment*"></textarea>
-                                        </fieldset>
-                                        <p class="form-submit">
-                                            <input class="theme-btn text-white" name="submit" type="submit"
-                                                id="comment-reply" class="submit" value="send message"> <input
-                                                type="hidden" name="comment_post_ID" value="27" id="comment_post_ID">
-                                            <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                                        </p>
-                                    </form>
-                                </div>
+                                <form class="comment-form">
+                                    <h4>Leave a Reply</h4>
+                                    <div class="row mgt-30">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" id="full-name" name="full-name" class="form-control"
+                                                    value="" placeholder="Full Name" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" id="blog-phone" name="blog-phone"
+                                                    class="form-control" value="" placeholder="phone" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" id="blog-email" name="blog-email"
+                                                    class="form-control" value="" placeholder="Email" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea name="message" id="message" class="form-control" rows="4"
+                                                    placeholder="Comments" required=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group mg-0">
+                                                <button type="submit" class="theme-btn text-white">Send message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                         </article>
                     </div>
                 </div>
