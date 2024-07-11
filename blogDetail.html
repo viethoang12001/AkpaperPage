@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="stylesheet/layout.css">
     <link rel="stylesheet" href="stylesheet/animation.css">
     <link rel="stylesheet" href="stylesheet/reponsive.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -105,7 +106,8 @@
                         </div>
                     </nav> <!-- /navwrap -->
                     <div class="theme-btn" id="btn-getStarted">
-                        <a href="#">Get Started<i class="fa-solid fa-arrow-right fa-rotate-by fa-sm" style="color: #ffffff; --fa-rotate-angle: 315deg;"></i></a>
+                        <a href="#">Get Started<i class="fa-solid fa-arrow-right fa-rotate-by fa-sm"
+                                style="color: #ffffff; --fa-rotate-angle: 315deg;"></i></a>
                     </div><!-- btn-get -->
                 </div>
             </div>
@@ -234,7 +236,9 @@
                                 </blockquote>
                                 <div class="post-wrapper">
                                     <div class="post-item">
-                                        <img src="images/post.png" alt="">
+                                        <div class="image">
+                                            <img src="images/post.png" alt="">
+                                        </div>
                                         <div class="post-content">
                                             <span class="text-date">September 20, 2023</span>
                                             <div class="post-line"></div>
@@ -243,7 +247,7 @@
                                         </div>
                                     </div>
                                     <div class="post-item">
-                                        <div><img src="images/post2.png" alt=""></div>
+                                        <div class="image"><img src="images/post2.png" alt=""></div>
                                         <div class="post-content">
                                             <span class="text-date">September 20, 2023</span>
                                             <div class="post-line"></div>
@@ -280,7 +284,7 @@
                                                 <li>
                                                     <article class="comment">
                                                         <div class="comment-avatar">
-                                                            <img src="images/commentavatar1.png" alt="">
+                                                            <img src="images/commentavatar2.jpg" alt="">
                                                         </div>
                                                         <div class="comment-detail">
                                                             <div class="comment-meta">
@@ -363,40 +367,48 @@
                     </div>
                     <!-- widget-news -->
                     <div class=" widget widget-popular-news">
-                        <h3 class="widget-title">Recent News</h3>
-                        <div class="popular-news">
-                            <div class="news-item">
-                                <div>
+                        <h4 class="widget-title">Recent News</h4>
+                        <ul>
+                            <li>
+                                <div class="image">
                                     <img src="images/new1.jpeg" alt="">
                                 </div>
-                                <div class="news-content">
-                                    <span class="text-date">September 20, 2023</span>
-                                    <div class="post-line"></div>
-                                    <a href="#" class="title-item text-main">Achieving Fashion Elegant se
-                                        Runway to Real Life</a>
+                                <div class="content">
+                                    <span class=" date text-date">September 20, 2023</span>
+                                    <h6>
+                                        <a class="text-main" href="blog-details.html">Achieving Fashion Elegant se
+                                            Runway to Real
+                                            Life</a>
+                                    </h6>
                                 </div>
-                            </div>
-                            <div class="news-item">
-                                <div><img src="images/new2.jpeg" alt=""></div>
-                                <div class="news-content">
-                                    <span class="text-date">September 20, 2023</span>
-                                    <div class="post-line"></div>
-                                    <a href="#" class="title-item text-main">Achieving Fashion Elegant se
-                                        Runway to Real Life</a>
+                            </li>
+                            <li>
+                                <div class="image">
+                                    <img src="images/new2.jpeg" alt="">
                                 </div>
-                            </div>
-                            <div class="news-item">
-                                <div>
+                                <div class="content">
+                                    <span class=" date text-date">September 20, 2023</span>
+                                    <h6>
+                                        <a class="text-main" href="blog-details.html">Achieving Fashion Elegant se
+                                            Runway to Real
+                                            Life</a>
+                                    </h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image">
                                     <img src="images/new3.jpeg" alt="">
                                 </div>
-                                <div class="news-content">
-                                    <span class="text-date">September 20, 2023</span>
-                                    <div class="post-line"></div>
-                                    <a href="#" class="title-item text-main">Achieving Fashion Elegant se
-                                        Runway to Real Life</a>
+                                <div class="content">
+                                    <span class=" date text-date">September 20, 2023</span>
+                                    <h6>
+                                        <a class="text-main" href="blog-details.html">Achieving Fashion Elegant se
+                                            Runway to Real
+                                            Life</a>
+                                    </h6>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div> <!-- ./widget-news -->
                     <!-- widget-popular -->
                     <div class=" widget widget-popular">
@@ -441,6 +453,7 @@
     </div>
     <!-- footer -->
     <footer class="footer">
+        <!-- CTA -->
         <div class="container">
             <div class="widget-CTA ">
                 <div class="row CTA ">
@@ -457,15 +470,19 @@
                             <span>Subscribe Our Newsletter</span>
                             <input type="text" placeholder="Email Address" class="input-email">
                             <div class="signUp">
-                                <a href="#" class="btn-signUp">Sign Up<i class="fa-solid fa-arrow-right fa-rotate-by fa-sm" style="color: #ffffff; --fa-rotate-angle: 315deg;"></i></a>
+                                <a href="#" class="btn-signUp">Sign Up<i
+                                        class="fa-solid fa-arrow-right fa-rotate-by fa-xs"
+                                        style="color: #ffffff; --fa-rotate-angle: 315deg;"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> <!-- ./CTA -->
+        <!-- footer-widget -->
         <div class="container">
-            <div class="row">
+            <div class="row justify-spaceBT">
+                <!-- About -->
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="widget widget-text footer-widget">
                         <h2 class="widget-title">About Company</h2>
@@ -480,9 +497,32 @@
                             <li><a href="#" class="color-social"><i class="fa-brands fa-instagram fa-sm"></i></a></li>
                         </ul>
                     </div>
-                </div>
+                </div><!-- ./About -->
+                <!-- Contact -->
+                <div class="col-xl-3 col-lg-4 col-sm-6 order-xl-2 ">
+                    <div class="widget widget-text footer-widget widget-contact">
+                        <h2 class="widget-title">Contact</h2>
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt" style="color: #ffffff;"></i>
+                                <span class="text_widgets ">55 Main Street, 2nd block Melbourne,
+                                    Australia</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                                <span class="text_widgets ">support@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                                +000 (123) 44 55
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- ./contact -->
+                <!-- widget-link -->
                 <div class="col-xl-6">
                     <div class="row">
+                        <!-- Resources -->
                         <div class="col-sm-4 col-6">
                             <div class=" footer-widget widget widget-text widget-link ">
                                 <h2 class="widget-title">Resources</h2>
@@ -493,7 +533,8 @@
                                     <li><a href="#" class="text_widgets">Benefits</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> <!-- Resources -->
+                        <!-- Quick Link -->
                         <div class="col-sm-4 col-6  ">
                             <div class="footer-widget widget widget-text widget-link ">
                                 <h2 class="widget-title">Quick Link</h2>
@@ -504,9 +545,9 @@
                                     <li><a href="#" class="text_widgets">Press Kit</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div><!-- ./Quick Link -->
+                        <!-- Company -->
                         <div class="col-sm-4 col-6 ">
-
                             <div class=" footer-widget widget widget-text widget-link ">
                                 <h2 class="widget-title">Company</h2>
                                 <ul>
@@ -516,45 +557,30 @@
                                     <li><a href="#" class="text_widgets">Latest News</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div><!-- Company -->
                     </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 ">
-                    <div class="widget widget-text footer-widget">
-                        <h2 class="widget-title">Contact</h2>
-                        <ul class="contact ">
-                            <li>
-                                <img class="imgContact " src="Icon/LocationIcon.png" alt="">
-                                <span class="text_widgets ">55 Main Street, 2nd block Melbourne,
-                                    Australia</span>
-                            </li>
-                            <li>
-                                <img class="imgContact" src="Icon/MessageIcon.png" alt="">
-                                <span class="text_widgets ">support@gmail.com</span>
-                            </li>
-                            <li>
-                                <img class="imgContact" src="Icon/phoneIcon.png" alt="">
-                                <span class="text_widgets">+000 (123) 44 55</span>
-                            </li>
+                </div> <!-- ./widget-link -->
+            </div> <!-- footer-widget -->
+            <!-- footer-bottom -->
+            <div class="footer-bottom py-15">
+                <div class="row">
+                    <div class="btnUp">
+                        <a href="#" class="upLink"><i class="fa-solid fa-angles-up fa-sm"></i></a>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text_widgets text_paragraph ">Copyright @2023, <span class="text-white">Akpager</span>
+                            All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-3 offset-md-5">
+                        <ul class="flex-custom">
+                            <li>Faqs</li>
+                            <li>Setting</li>
+                            <li>Privacy</li>
+                            <li>Contact</li>
                         </ul>
                     </div>
                 </div>
-                <div class="btnUp">
-                    <a href="#" class="upLink"><i class="fa-solid fa-angles-up fa-sm"></i></a>
-                </div>
-                <div class="col-md-4">
-                    <p class="text_widgets text_paragraph ">Copyright @2023, <span class="text-white">Akpager</span>
-                        All Rights Reserved</p>
-                </div>
-                <div class="col-md-3 offset-md-5">
-                    <ul class="flex-custom">
-                        <li>Faqs</li>
-                        <li>Setting</li>
-                        <li>Privacy</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-            </div>
+            </div><!-- ./footer-bottom -->
         </div>
     </footer>
     <!-- ./footer -->
