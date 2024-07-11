@@ -711,11 +711,6 @@ input {
 }
 
 
-.blockqiute-icon {
-    position: absolute;
-    top: 59px;
-    right: 153px;
-}
 
 
 .blockqiute-author {
@@ -780,6 +775,27 @@ input {
     margin-bottom: 50px;
 }
 
+.alignleft.style-2 .blockqiute-text h2 {
+    margin: 0;
+}
+
+
+.alignleft.style-2 {
+    position: relative;
+    border-radius: 12px;
+    padding: 28px 50px 30px 130px
+}
+.alignleft.style-2 .wrap-text::before {
+    content: "";
+    background-image: url(../Icon/Group2.png);
+    height: 40px;
+    width: 53px;
+    left: 45px;
+    top: 33px;
+    position: absolute;
+
+}
+
 .wrap-text .blockqiute-text {
     display: flex;
 }
@@ -801,9 +817,9 @@ input {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 18.77px;
-    padding-left: 150px;
-    text-transform: uppercase;
+    padding-left: 60px;
     position: relative;
+    margin-top: 25px;
 
 }
 
@@ -812,7 +828,7 @@ input {
     height: 2px;
     background-color: rgba(0, 23, 38, 1);
     content: "";
-    left: 84px;
+    left: 0;
     top: 8px;
     position: absolute;
 }
@@ -821,6 +837,7 @@ input {
 .widget-share {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 60px;
 }
 
@@ -941,14 +958,16 @@ input {
     border-radius: 10px;
 }
 
-.comment-form h4{
+.comment-form h4 {
     font-size: 27px;
     line-height: 32px;
 }
+
 .comment-form .form-group {
     margin-bottom: 30px;
 }
-.form-control{
+
+.form-control {
     font-size: 1rem;
     line-height: 1.5;
     color: #212529;
