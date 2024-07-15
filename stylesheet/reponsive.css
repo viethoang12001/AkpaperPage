@@ -2,33 +2,100 @@
 	.header.style2 .header-inner .logo {
 		padding: 0 108px 0 30px;
 	}
+
+	.font-sz {
+		font-size: 48px !important;
+	}
+
 }
 
-
-
-@media only screen and (max-width: 1200px) {
-	.header-inner #btn-getStarted{
+@media only screen and (max-width: 1199px) {
+	.header-inner #btn-getStarted {
 		display: none;
+	}
+
+	.banner-inner .page-title {
+		font-size: 55px !important;
+		margin-bottom: 20px;
+	}
+
+	.banner-inner .page-title.font-sz {
+		font-size: 40px !important;
+	}
+
+	.page-banner-area .banner-direction {
+		font-size: 22px;
+	}
+
+	.widget-link {
+		max-width: max-content;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.page-banner-area {
+		padding: 120px 0;
+	}
+
+	.slideBar {
+		margin-top: 75px;
 	}
 }
 
 @media only screen and (max-width: 767px) {
-
-	/* header */
-	#header {
-		padding-bottom: 90px;
-		background-position: center center;
-		background-size: cover;
-		object-fit: cover;
-	}
-	.header-inner  {
+	.banner-inner .page-title {
+		font-size: 40px !important;
+		margin-bottom: 15px;
 	}
 
-	.Banner-content {
-		margin: 0;
+	.banner-inner .page-title.font-sz{
+		font-size: 35px !important;
 	}
-	.Banner-content h1{
-		font-size: 36px;
-        line-height: 40px;
+	.alignleft {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+
+	.alignleft .blockqiute-text .title {
+		font-size: 25px !important;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.banner-inner .page-title {
+		font-size: 36px !important;
+	}
+	.banner-inner .page-title.font-sz{
+		font-size: 30px !important;
+	}
+
+	.page-banner-area .banner-direction {
+		font-size: 18px;
+	}
+
+	.blog-standard-item h3 {
+		font-size: 25px !important;
+	}
+
+	.alignleft.style-2 {
+		padding: 28px 30px 30px 80px;
+	}
+	.alignleft.style-2 .blockqiute-text .title {
+		font-size: 22px !important;
+	}
+	.alignleft.style-2 .wrap-text::before{
+		left: 25px;
+        height: 33px;
+        width: 44px;
+	}
+	.entry-content .title{
+		font-size: 25px !important;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.alignleft .blockqiute-text .title {
+		font-size: 20px !important;
 	}
 }

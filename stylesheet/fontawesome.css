@@ -10,3 +10,7 @@
 .far {
     font-weight: 400;
 }
+
+.fa-brands::before{
+    content: "\E5CF";
+}

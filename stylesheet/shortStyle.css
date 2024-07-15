@@ -1,8 +1,8 @@
 @import url(color.css);
 
 .imgblog {
-    width: 100%;
-    height: 460px;
+
+
     border-radius: 10px;
 }
 
@@ -83,6 +83,8 @@ a {
 }
 
 img {
+    max-width: 100%;
+    display: inline-block;
     object-fit: cover;
     object-position: center;
 }
@@ -171,13 +173,14 @@ i {
     background-color: rgba(39, 53, 87, 1);
 }
 
-.font-sz {
-    font-size: 48px !important;
-}
 
 .blog-meta {
     display: flex;
     flex-wrap: wrap;
     padding-top: 12px;
     padding-bottom: 12px;
+}
+.bgs{
+    background-position: center;
+    background-size: cover;
 }
